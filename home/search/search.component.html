@@ -1,0 +1,37 @@
+<html>
+  <body>
+    <navbar></navbar>
+
+        <div class="main jumbotron">
+            <div class="container">
+            <h1 class="text-center dashHeading">Search Results</h1>
+            </div>
+            <h2> Welcome to movie rockers search Page</h2>
+            <p><span>Note:</span>The movies can be sorted or filtered using the table headers</p>
+            <p><span>Note:</span>Please use the title  columns to find the details about the respective movie</p>
+
+          
+            <div class="gridAg">
+            <ag-grid-angular
+            style="width:800px;height:500px;"
+            class="ag-theme-balham"
+            (gridReady)="onreadyGrid($event)"
+            [columnDefs]="columnDefs"
+            [animateRows]="true"
+            [pagination]="true"
+            [paginationPageSize]="10"
+            [enableFilter]="true"
+            [floatingFilter]="true"
+            [enableSorting]="true"
+           
+            ></ag-grid-angular>
+            </div>
+          </div>
+          <!--Footer Part-->
+          <footer class="footer">
+              <div class="container text-center">
+                <span class="text-white">&copy; All Rights Reserved By VMovies</span>
+                </div>
+                </footer>
+  </body>
+  </html>

@@ -1,0 +1,3 @@
+<div *ngFor="let movie of movies">
+  <a *ngIf="cellValue==movie.Title" [routerLink]="['/details',movie.imdbID]">{{cellValue}}</a>
+  </div>

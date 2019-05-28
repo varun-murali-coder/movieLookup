@@ -1,0 +1,75 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title> Movie Application</title>
+    <!--Stylesheets-->
+</head>
+
+<body>
+  <navbar></navbar>
+  <main>
+      <div class="jumbotron">
+          <h1 class="display-4">{{movieData.Title}}</h1>
+
+          <p class="lead">By<cite>  {{movieData.Director}} </cite></p>
+
+      </div>
+
+
+      <div class="container">
+
+      <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Released</th>
+      <th scope="col">{{movieData.Released}}</th>
+    </tr>
+    <tr>
+        <th scope="col">Rated</th>
+        <th scope="col">{{movieData.Rated}}</th>
+      </tr>
+
+      <tr>
+          <th scope="col">Awards</th>
+          <th scope="col">{{movieData.Awards}}</th>
+        </tr>
+
+        <tr>
+            <th scope="col">Actors</th>
+            <th scope="col">{{movieData.Actors}}</th>
+          </tr>
+
+          <tr>
+              <th scope="col">Production</th>
+              <th scope="col">{{movieData.Production}}</th>
+            </tr>
+
+            <tr>
+                <th scope="col">Plot</th>
+                <th scope="col">{{movieData.Plot}}</th>
+              </tr>
+            
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+    </main>
+  <footer class="footer">
+      <div class="container text-center">
+      <span class="text-muted">&copy; All Rights Reserved By VMovies</span>
+      </div>
+      
+          </footer>
+      
+      
+        
+      </body>
+      
+      </html>

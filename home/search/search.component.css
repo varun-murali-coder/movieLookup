@@ -1,0 +1,74 @@
+/*To enable horizontal scrolling for mobile view for grid*/
+p{
+    font-size:16px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top:30px;
+  }
+  
+  .gridAg{
+    overflow-x: auto;
+    overflow:scroll;
+  }
+  
+  
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+  .main {
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+
+  /*Styling for footer*/
+  html{
+    position:relative;
+    min-height:100%; 
+    
+      } 
+      body{
+
+        padding-bottom:100px; 
+        font-family: "Lato", sans-serif;
+        
+      }
+      .main {
+        margin-left: 170px; /* Same as the width of the sidenav */
+        font-size: 20px; /* Increased text to enable scrolling */
+        padding: 0px 10px;
+      }
+      
+
+.footer{
+    position:absolute;
+    width:100%;
+    height:80px;
+    line-height:60px;
+    background-color:#007bff;
+    bottom:0;
+    }
+
+    @media screen and (min-height: 768px) {
+			body{
+					padding-bottom:600px;
+			}
+
+		 
+		}
+   

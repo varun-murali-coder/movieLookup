@@ -1,0 +1,86 @@
+
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title> Movie Application</title>
+    <!--Stylesheets-->
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">VMOVIELOOKERS</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <button class="btn btn-outline-primary my-2 my-sm-0 logB active ">About</button>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" name="keyword" [(ngModel)]="keyword"  placeholder="Search"
+          aria-label="Search">
+        <button class="btn btn-outline-warning my-2 my-sm-0 active" (click)="search()" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <main>
+    <div class="jumbotron">
+        <h1 class="display-4">Movie Rocker</h1>
+        <p class="lead">The latest movie updates are available here 24*7 </p>
+    </div>
+
+
+<div class="container">
+
+   <div class="row justify-content-around">
+    
+    <div class="card border-primary mb-0" style="width: 18rem;">
+  <img class="card-img-top" src="assets/images/image1.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title text-primary">Dead Pool</h5>
+    <p class="card-text">Last updated 3 days ago</p>
+  </div>
+</div>
+
+<div class="card border-primary mb-0" style="width: 18rem;">
+  <img class="card-img-top" src="assets/images/image2.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title text-primary">Spider</h5>
+    <p class="card-text">Last updated 3 days ago</p>
+       
+  </div>
+</div>
+
+<div class="card border-primary mb-0" style="width: 18rem;">
+  <img class="card-img-top" src="assets/images/image3.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title text-primary">Avengers</h5>
+    <p class="card-text"><small class="text-muted">Last updated 3 days ago</small></p>
+    
+  </div>
+</div>
+
+    </div>
+   </div>
+       
+</main>
+<footer class="footer">
+<div class="container text-center">
+<span class="text-muted">&copy; All Rights Reserved By VMovies</span>
+</div>
+
+    </footer>
+
+
+  
+</body>
+
+</html>
